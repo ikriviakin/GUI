@@ -34,24 +34,3 @@
 python -m lab2.currency_converter
 ```
 
-### Результат работы программы
-
-Окно при старте:
-
-![alt text](screens/image-start.png)
-
-После ввода в поле USD:
-
-![alt text](screens/image-usd.png)
-
-После ввода в поле RUB:
-
-![alt text](screens/image-rub.png)
-
-После ввода в поле EUR:
-
-![alt text](screens/image-eur.png)
-
-Проверка ограничения на максимальный ввод (валидатор):
-
-![alt text](screens/image-valid.png)
