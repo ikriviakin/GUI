@@ -19,7 +19,7 @@
 
 ### Технические компоненты
 
-<<<<<<< HEAD
+
 - `QSqlDatabase` — открытие и закрытие SQLite.
 - `QSqlQueryModel` + SQL — данные для отображения.
 - `QTableView` — таблица на каждой вкладке.
@@ -32,5 +32,4 @@
 ```powershell
 python -m lab3.db_window
 ```
-=======
->>>>>>> ea6c8cb3705a7d0e0598e61fdd21ea841bfd3e66
+
