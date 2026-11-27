@@ -1,6 +1,4 @@
 ## Лабораторная работа № 3
-## Васильев Артём
-## Группа 6231-010402D
 
 ### Архитектура и принцип работы
 
@@ -19,47 +17,3 @@
 3. Автоматически и по нажатию кнопок `(bt1, bt2, bt3)` или при смене пункта в QComboBox формируются SQL-запросы, результаты которых передаются соответствующим вкладкам `QTabWidget`.
 4. При вызове *Close connection* модели всех таблиц обнуляются, а соединение с БД безопасно закрывается
 
-**Результат работы программы:**
-
-Запуск программы
-
-![alt text](screens/start.png)
-
-Попытка установить соединение
-
-![alt text](screens/set_con_1.png)
-
-В случае успеха появляется `MessageBox` с уведомлением
-об успешном соединении, иначе выдаст ошибку
-
-![alt text](screens/succcess_con.png)
-
-`Tab1`: Автоматически заполняется при вызове `set_connection()` запросом 
-`SELECT * FROM sqlite_master.`
-
-![alt text](screens/tab1.png)
-
-`Tab2`: кнопка btn1 отправляет запрос 
-`SELECT type, name, tbl_name FROM sqlite_master.`
-
-![alt text](screens/tab2.png)
-
-
-`Tab3`: При выборе любой таблицы в `QComboBox` отправляется запрос `SELECT * FROM "<выбранная_таблица>".`
-
-![alt text](screens/tab3.png)
-
-
-`Tab4`: Кнопка `btn2` выводит структуру таблиц `WHERE type='table'.`
-
-![alt text](screens/tab4.png)
-
-`Tab5`: Кнопка `bt3` выводит индексы и представления `WHERE type IN ('index', 'trigger', 'view').`
-
-![alt text](screens/tab5.png)
-
-Закрываем соединение 
-
-![alt text](screens/close_con.png)
-
-![alt text](screens/success_close.png)
